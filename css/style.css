@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+body {
+    background-color: rgb(246, 241, 233);
+}
+
+/* style of header */
+header {
+    background-color: rgb(255, 217, 61);
+    text-align: center;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+}
+
+header h1 {
+    font-family: courier, serif;
+    font-size: 3rem;
+}
+
+header h2 {
+    font-family: "Imperial Script", serif;
+    letter-spacing: 0.15rem;
+}
+
+/* style of header END */ 
+
+/* style of nav */ 
+
+nav {
+    width: 100%;
+    background-color: rgb(255, 154, 0); 
+    overflow: hidden;
+}
+
+nav ul {
+    width: max-content;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    margin: 0 25px;
+    list-style-image: url(../img/logo.png);
+}
+
+nav ul li a {
+    font-family: courier, serif;
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+/* style of nav END */
+
+/* style of footer */
+
+footer {
+    background-color: rgb(255, 217, 61);
+    overflow: hidden;
+    width: 100%;
+    padding: 3rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-col {
+    float: left;
+    width: 33.3%;
+    padding: 0 0.8rem;
+    text-align: center;
+}
+
+footer img {
+    filter: 
+    drop-shadow(0 0 15px yellow)
+    drop-shadow(0 0 25px rgb(255, 255, 255));
+    transition: filter 0.3s ease;
+}
+
+/* style of footer END */
+
+/* style of main paige */
+
+#first-page {
+    max-width: 80%;
+    margin: 3rem auto;
+    overflow: hidden;
+}
+
+.hirek {
+    margin-bottom: 2rem;
+}
+
+#first-page h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#first-page p {
+    float: left;
+    width: 60%;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.torocsik {
+    float: right;
+    width: 35%;
+    border: 1px solid;
+}
+
+/* style of main page END */
+
+/* style of performances */
+
+#second-page {
+    max-width: 80%;
+    margin: 3rem auto;
+    overflow: hidden;
+}
+
+.performance-col {
+    float: left;
+    width: 33.3%;
+    min-height: 320px;
+    padding: 0 0.8rem;
+    text-align: left;
+    line-height: 1.2; 
+    padding: 1%;
+    font-size: 1.1rem;
+}
+
+.performance-col:hover {
+    background-color: rgba(255, 154, 0, 0.1);
+}
+
+.performance-col a {
+    text-decoration: none;
+    color: rgb(79, 32, 13)
+}
+
+.performance-col a:hover{
+    text-decoration: underline;
+}
+
+/* style of performances END */ 
+
+/* style of theater company */ 
+
+.company {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.actors {
+    float: left;
+    width: 49%;
+    padding: 0 0.8rem;
+    text-align: center;
+    line-height: 1.2; 
+    padding: 1%;
+    font-size: 1.1rem;
+}
+
+.actors:hover {
+    background-color: rgba(255, 154, 0, 0.1);
+}
+
+.actors-mini {
+    float: left;
+    width: 18%;
+    padding: 1rem;
+    margin: 1%;
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: rgb(255, 154, 0, 0.1);
+    border: 0;
+    border-radius: 15px;
+
+}
+
+.actors-mini:hover {
+    background-color: rgb(79, 32, 13);
+    color: white;
+}
+
+/* styles of company END */
