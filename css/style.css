@@ -103,6 +103,20 @@ footer img {
     overflow: hidden;
 }
 
+.description {
+    margin-bottom: 2rem;
+}
+
+.description h2 {
+    margin: 1rem 0 2rem 0;
+}
+
+.description p {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
 .hirek {
     margin-bottom: 2rem;
 }
