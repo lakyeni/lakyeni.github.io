@@ -1,219 +1,88 @@
 * {
-    box-sizing: border-box;
+    margin: 0;
     padding: 0;
-    margin:0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(246, 241, 233);
+    font-family: "Roboto", Times, serif;
+    padding: 20px;
+    background-color: #FFFFD4;
 }
 
-/* style of header */
-header {
-    background-color: rgb(255, 217, 61);
-    text-align: center;
+main {
+    width: 70%;
     margin: auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    overflow: hidden;
+    border: 2px solid brown;
+    background-color: white;
+    color: #555;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
 }
 
-header h1 {
-    font-family: courier, serif;
-    font-size: 3rem;
+header {
+    background-image: url(../img/fejlec_predikaloszek_1024x303.png);
+    text-align: center;
+    color: beige;
+    width: 100%;
+    height: 50vh;
 }
 
-header h2 {
-    font-family: "Imperial Script", serif;
-    letter-spacing: 0.15rem;
+h1 {
+    padding: 15%;
 }
-
-/* style of header END */ 
-
-/* style of nav */ 
 
 nav {
-    width: 100%;
-    background-color: rgb(255, 154, 0); 
+    background-color:  #FF7F2A;
     overflow: hidden;
+    text-align: center;
 }
 
-nav ul {
-    width: max-content;
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
+nav li {
+    margin: auto 0;
+    list-style-type: none;
+    display: inline-block;
 }
 
-nav ul li {
-    float: left;
-    margin: 0 25px;
-    list-style-image: url(../img/logo.png);
-}
-
-nav ul li a {
-    font-family: courier, serif;
+nav li a {
     display: block;
-    color: white;
-    padding: 10px;
+    padding: 10px 20px;
     text-decoration: none;
-    font-size: 1.6rem;
+    color: white;
+    font-size: bold;
 }
 
-nav ul li a:hover {
-    color: black;
+nav li a:hover {
+    background-color:  #BF153F;
+    border-radius: 5px;
+
 }
 
-/* style of nav END */
-
-/* style of footer */
-
-footer {
-    background-color: rgb(255, 217, 61);
-    overflow: hidden;
-    width: 100%;
-    padding: 3rem;
-}
-
-footer p {
-    margin-bottom: 0.5rem;
-}
-
-.footer-col {
-    float: left;
-    width: 33.3%;
-    padding: 0 0.8rem;
-    text-align: center;
-}
-
-footer img {
-    filter: 
-    drop-shadow(0 0 15px yellow)
-    drop-shadow(0 0 25px rgb(255, 255, 255));
-    transition: filter 0.3s ease;
-}
-
-/* style of footer END */
-
-/* style of main paige */
-
-#first-page {
-    max-width: 80%;
-    margin: 3rem auto;
+article {
+    margin: 3%;
+    font-size: 1.2rem;  
     overflow: hidden;
 }
 
-.description {
-    margin-bottom: 2rem;
+article h2, h3 {
+    margin: 2% 0;
 }
 
-.description h2 {
-    margin: 1rem 0 2rem 0;
-}
-
-.description p {
-    text-align: justify;
-    font-size: 1.2rem;
-    line-height: 1.4;
-}
-
-.hirek {
-    margin-bottom: 2rem;
-}
-
-#first-page h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-#first-page p {
+.cikk {
     float: left;
-    width: 60%;
-    font-size: 1.2rem;
-    text-align: justify;
-    line-height: 1.4;
+    width: 65%;
+    overflow: hidden;
+    margin: 1% 0;
 }
 
-.torocsik {
+img {
     float: right;
-    width: 35%;
-    border: 1px solid;
+    width: 30%;
+    margin: 10px;
 }
 
-/* style of main page END */
-
-/* style of performances */
-
-#second-page {
-    max-width: 80%;
-    margin: 3rem auto;
-    overflow: hidden;
+hr {
+    clear: both;   
+    margin: 20px 0; 
+    border: none;  
+    border-top: 1px solid brown; 
 }
-
-.performance-col {
-    float: left;
-    width: 33.3%;
-    min-height: 320px;
-    padding: 0 0.8rem;
-    text-align: left;
-    line-height: 1.2; 
-    padding: 1%;
-    font-size: 1.1rem;
-}
-
-.performance-col:hover {
-    background-color: rgba(255, 154, 0, 0.1);
-}
-
-.performance-col a {
-    text-decoration: none;
-    color: rgb(79, 32, 13)
-}
-
-.performance-col a:hover{
-    text-decoration: underline;
-}
-
-/* style of performances END */ 
-
-/* style of theater company */ 
-
-.company {
-    text-align: center;
-    font-size: 1.7rem;
-    margin-bottom: 1rem;
-}
-
-.actors {
-    float: left;
-    width: 49%;
-    padding: 0 0.8rem;
-    text-align: center;
-    line-height: 1.2; 
-    padding: 1%;
-    font-size: 1.1rem;
-}
-
-.actors:hover {
-    background-color: rgba(255, 154, 0, 0.1);
-}
-
-.actors-mini {
-    float: left;
-    width: 18%;
-    padding: 1rem;
-    margin: 1%;
-    text-align: center;
-    font-size: 1.1rem;
-    background-color: rgb(255, 154, 0, 0.1);
-    border: 0;
-    border-radius: 15px;
-
-}
-
-.actors-mini:hover {
-    background-color: rgb(79, 32, 13);
-    color: white;
-}
-
-/* styles of company END */
