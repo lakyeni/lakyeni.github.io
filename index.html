@@ -3,107 +3,196 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Fedezd fel a Pilis gyönyörű tájait a Predikálószékről! Lenyűgöző panoráma, friss levegő és 
-      emlékezetes túraélmények várnak minden kirándulóra."
-    />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Kirándulás a Pilisben | Predikálószék" />
-    <meta
-      property="og:description"
-      content="Fedezd fel a Pilis gyönyörű tájait a Predikálószékről! Lenyűgöző panoráma, friss levegő és emlékezetes túraélmények várnak."
-    />
-    <title>Pilis túra - Prédikálószék - kirándulás</title>
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <title>6. Házi feladat | Prooktatás</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <main>
-      <header>
-        <h1>Kirándulás a Pilisben</h1>
-      </header>
+    <div id="container">
+      <header></header>
+      <aside>
+        <div class="aside-container">
+          <!-- navigációs sáv-->
+          <nav>
+            <ul>
+              <li><a href="#section-1">Balaton</a></li>
+              <li><a href="#section-2">Tisza-tó</a></li>
+              <li><a href="#section-3">Szelidi-tó</a></li>
+            </ul>
+          </nav>
+          <!--űrlap-->
+          <form>
+            <h3>Kérem töltse ki az űrlapot</h3>
 
-      <nav>
-        <ul>
-          <li><a href="#Prédikálószék">Prédikálószék</a></li>
-          <li><a href="#Vadallo">Vadálló kövek</a></li>
-          <li><a href="#Dera">Dera-szurdok</a></li>
-        </ul>
-      </nav>
+            <!--név-->
+            <label class="font-bold" for="name">Teljes neve:</label>
+            <input type="text" id="name" name="name" />
 
-      <article>
-        <div id="Prédikálószék">
-            <h2>Prédikálószék</h2>
-          <div class="cikk">
-            <p>
-              A Prédikálószék a Visegrádi-hegység egyik hegye Komárom-Esztergom
-              és Pest vármegyék határán, csúcsa éppen e megyehatár közvetlen
-              közelében emelkedik. Északi és keleti lejtői Visegrád területére
-              esnek, míg déli és nyugati oldala Dömös közigazgatási területén
-              helyezkedik el. 639 méteres magasságával a Visegrádi-hegység
-              harmadik legmagasabb pontja (a 699 méteres Dobogó-kő és a 654
-              méteres Öreg-vágás-hegy) mögött, a Dunazug-hegyvidéken belül a
-              kilencedik.
-            </p>
-          </div>
-          <div>
-            <img src="./img/Prédikálószéki-kilátó_01-696x464.jpg" alt="Prédikálószék kilátó" title="Prédikálószék kilátó" width: 600>
-          </div>
-        </div>
-        <div id="Vadallo">
-        <hr/>
-        <h2>Vadálló kövek</h2>
-          <div class="cikk">
-            <p>
-              A Prédikálószék a Visegrádi-hegység egyik hegye Komárom-Esztergom
-              és Pest vármegyék határán, csúcsa éppen e megyehatár közvetlen
-              közelében emelkedik. Északi és keleti lejtői Visegrád területére
-              esnek, míg déli és nyugati oldala Dömös közigazgatási területén
-              helyezkedik el. 639 méteres magasságával a Visegrádi-hegység
-              harmadik legmagasabb pontja (a 699 méteres Dobogó-kő és a 654
-              méteres Öreg-vágás-hegy) mögött, a Dunazug-hegyvidéken belül a
-              kilencedik.
-            </p>
-          </div>
-          <div>
-            <img src="./img/vadallo-kovek.jpg" alt="Vadálló kövek szklái" title="Vadálló kövek" width: 600>
-          </div>
-        </div>
-        <div id="Dera">
-        <hr/>
-        <h2>Dera-szurdok</h2>
-          <div class="cikk">
-            <p>A Dera- vagy Kovács-patak által kialakított szurdokvölgy a Pilis mészkőszirtjeit és a 
-                Visegrádi-hegység vulkanikus kőzeteit elválasztó törésvonal mentén található. A patak munkája formálta ki 
-                a meredek völgyet, amely ma búvópatak jellegű: egyes szakaszokon eltűnik, máshol ismét felszínre tör. 
-                A festői szurdokban apró vízesések, kis bukók és kimosott sziklaformák díszítik a tájat. A kelet-nyugat irányú 
-                völgy rendkívül meredek, ezért még a legnagyobb nyári hőség idején is kellemesen hűvös klímát biztosít. 
-            </p>
-          </div>
-          <div>
-            <img src="./img/dera_szurdok_6-1024x683.webp" alt="Dera-szurdok fahídja" title="Dera-szurdok" width: 600>
-          </div>
-        </div>
-      </article>
+            <!--e-mail-->
+            <label class="font-bold" for="email">E-mail címe</label>
+            <input type="email" id="email" name="email" required />
 
-      <footer>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10737.421773973067!2d18.885008204021695!3d47.716350076038054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476a7c71a7bfaf83%3A0xa00c42b8575e3b0!2zUGlsaXNzemVudGtlcmVzenQsIERvYm9nw7NrxZEsIDIwOTkgTWHEj2Fyc2tv!5e0!3m2!1scs!2ssk!4v1770282359493!5m2!1scs!2ssk"
-          width="100%"
-          height="200px"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </footer>
-    </main>
+            <!--telefon-->
+            <label class="font-bold" for="phone">Telefonszáma</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="06-20-123-4567"
+            />
+
+            <!--milyen tó-->
+            <label class="font-bold" for="lake">Melyik tó érdekli?</label>
+            <div>
+              <select id="lake" name="lake">
+                <option value="balaton">Balaton</option>
+                <option value="tisza-to">Tisza-tó</option>
+                <option value="szelidi-to">Szelidi-tó</option>
+              </select>
+            </div>
+
+            <!--milyen szállás-->
+            <fieldset class="szallas">
+              <legend class="font-bold">Milyen szállást keres?</legend>
+
+              <div class="service-option">
+                <input
+                  type="checkbox"
+                  id="hotel"
+                  name="accommodation"
+                  value="hotel"
+                />
+                <label for="hotel">Szálloda</label>
+              </div>
+
+              <div class="service-option">
+                <input
+                  type="checkbox"
+                  id="apartman"
+                  name="accommodation"
+                  value="apartman"
+                />
+                <label for="apartman">Apartman ház</label>
+              </div>
+
+              <div class="service-option">
+                <input
+                  type="checkbox"
+                  id="camping"
+                  name="accommodation"
+                  value="camping"
+                />
+                <label for="camping">Kemping</label>
+              </div>
+            </fieldset>
+            <!--milyen ellátás-->
+            <fieldset>
+              <legend class="font-bold">Milyen ellátást kér?</legend>
+              <div class="service-option">
+                <input
+                  type="radio"
+                  id="half-board"
+                  name="service"
+                  value="half-board"
+                />
+                <label for="half-board">Félpanzió</label>
+              </div>
+              <div class="service-option">
+                <input
+                  type="radio"
+                  id="only-breakfast"
+                  name="service"
+                  value="only-breakfast"
+                />
+                <label for="only-breakfast">Csak reggeli</label>
+              </div>
+              <div class="service-option">
+                <input
+                  type="radio"
+                  id="no-service"
+                  name="service"
+                  value="no-service"
+                />
+                <label for="no-service">Nem kérek ellátást</label>
+              </div>
+            </fieldset>
+            <!--egyéb üzenet -->
+            <label class="font-bold" for="comment">Egyéb üzenet:</label>
+            <textarea
+              id="comment"
+              name="comment"
+              rows="3"
+              placeholder="Ide írhat üzenetet"
+            ></textarea>
+            <!--küldés gomb-->
+            <button type="submit">Mehet</button>
+          </form>
+        </div>
+      </aside>
+      <section id="section-1">
+        <h2>Balaton</h2>
+        <img src="./img/balaton_600x350.jpg" alt="Balaton" title="Balaton" />
+        <p>
+          A Balaton Magyarország legnagyobb tava, amelyet gyakran „a magyar
+          tengerként” emlegetnek. Közép-Európa legnagyobb édesvizű tava, hossza
+          körülbelül 77 kilométer. A tó a Dunántúlon helyezkedik el, és népszerű
+          turisztikai célpont nyáron. Az északi partján található a festői
+          szépségű Balaton-felvidék, amely dombos tájairól és
+          szőlőültetvényeiről ismert. A déli part sekélyebb, ezért különösen
+          kedvelt a kisgyermekes családok körében. A Balaton vízének
+          hőmérséklete nyáron gyakran eléri a 27 °C-ot is. A tó körül számos
+          híres üdülőváros található, például Siófok és Balatonfüred. A térség
+          gazdag kulturális és gasztronómiai hagyományokban, különösen a
+          balatoni borvidékek révén. A tó környéke kerékpározásra is kiváló,
+          hiszen kiépített bicikliút fut végig a part mentén. A Balaton egész
+          évben vonzó úti cél, nemcsak nyáron, hanem ősszel és tavasszal is.
+        </p>
+      </section>
+      <section id="section-2">
+        <h2>Tisza-tó</h2>
+        <img
+          src="./img/tisza_to_1500-844.jpg"
+          alt="Tisza-tó"
+          title="Tisza-tó"
+        />
+        <p>
+          A Tisza-tó Magyarország második legnagyobb tava, amely az Alföld
+          északi részén található. Mesterségesen hozták létre a Tisza
+          duzzasztásával az 1970-es években. A tó hivatalos neve
+          Kiskörei-víztározó, de a köznyelvben Tisza-tóként ismert. Területe
+          változatos: sekély vizű részek, szigetek és gazdag növényvilág
+          jellemzi. Különösen népszerű a természetkedvelők és horgászok körében.
+          A tó körül kiépített kerékpárút fut, amely remek lehetőséget biztosít
+          aktív kikapcsolódásra. A madárvilága rendkívül gazdag, ezért fontos
+          természetvédelmi területnek számít. A legismertebb települések közé
+          tartozik Tiszafüred és Poroszló. Poroszlón található a látványos
+          Tisza-tavi Ökocentrum, amely bemutatja a térség élővilágát. A Tisza-tó
+          nyugodtabb, természetközelibb élményt kínál, mint a nagyobb hazai
+          tavak.
+        </p>
+      </section>
+      <section id="section-3">
+        <h2>Szelidi-tó</h2>
+        <img
+          src="./img/szelidi_to_1200x900.jpg"
+          alt="Szelidi-tó"
+          title="Szelidi-tó"
+        />
+        <p>
+          A Szelidi-tó egy hangulatos, természetes eredetű tó a Duna–Tisza
+          közén. Dunapataj közelében található, és kedvelt nyári üdülőhelynek
+          számít. Vize enyhén sós jellegű, ami különleges összetételének
+          köszönhető. A tó körül kiépített strand és üdülőterület várja a
+          látogatókat. A sekély víz miatt gyorsan felmelegszik, így kiváló
+          fürdőhely a nyári hónapokban. A környék csendes, nyugodt környezetet
+          biztosít a pihenni vágyóknak. A tó partján rendezik meg minden évben a
+          népszerű Szelidi-tavi Nyár kulturális és zenei programjait. A
+          horgászat is kedvelt tevékenység a tavon. Természeti környezete gazdag
+          növény- és állatvilággal rendelkezik. A Szelidi-tó ideális választás
+          azok számára, akik a nyugodtabb, családias hangulatú kikapcsolódást
+          keresik.
+        </p>
+      </section>
+      <footer>2026</footer>
+    </div>
   </body>
 </html>
