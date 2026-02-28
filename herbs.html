@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HerbaLex - Gyógynövények egyszerűen felhasználásuk szerint</title>
+    <meta name="author" content="lakyeni" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navigáció-->
+    <nav class="nav">
+      <h2>Logo</h2>
+      <ul class="menu">
+        <li><a href="./index.html">Főoldal</a></li>
+        <li><a href="./herbs.html">Gyógynövények</a></li>
+        <li><a href="./area_of_use.html">Felhasználási területek</a></li>
+        <li><a href="./tees_&_recipes.html">Teák és receptek</a></li>
+        <li><a href="./contact.html">Kapcsolat</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+    <!--Header-->
+    <header>
+      <div class="hero-content">
+        <h1 class="hero-title">HerbaLex</h1>
+        <input
+          class="search-input"
+          type="text"
+          id="searchInput"
+          placeholder="Keresés gyógynövényre..."
+        />
+        <!--Mottó-->
+      </div>
+      <div class="motto"><i>„Tudás a természetből.”</i></div>
+    </header>
+    <!-- Gyógynövények katalógusa-->
+
+    <h2 class="title-catalog">Gyógynövény-katalógus</h2>
+    <section class="catalog">
+      <!--Ánizs-->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./img/anizs.jpg" alt="Ánizs" />
+            <div class="card-title">Ánizs</div>
+          </div>
+          <div class="card-back">
+            <h3 class="card-title">Ánizs</h3>
+            <h4 class="card-title">Pimpinella anisum L.</h4>
+            <p>Fűszernövény</p>
+            <p>
+              Főzelékek, vadas ételek, mártások ízesítésére, de édességekbe is
+              használják.
+            </p>
+            <p>Likőrgyártásban jelentős.</p>
+            <p>Gógyhatása: étvágyjavító, emésztést serkentő, vértisztító.</p>
+          </div>
+        </div>
+      </div>
+      <!--Aranyvessző-->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./img/aranyvesszo.jpg" alt="Aranyvessző" />
+            <div class="card-title">Aranyvessző</div>
+          </div>
+          <div class="card-back">
+            <h3 class="card-title">Aranyvessző</h3>
+            <h4 class="card-title">Solidago spp.</h4>
+            <p>Gyógynövény</p>
+            <p>
+              Gyógyhatása: Vizelethajtó, gyulladáscsökkentő és immunrendszert
+              aktiváló hatása van.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Bíborkasvirág-->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./img/biborkasvirag.jpg" alt="Bíbor kasvirág" />
+            <div class="card-title">Bíbor kasvirág</div>
+          </div>
+          <div class="card-back">
+            <h3 class="card-title">Bíbor kasvirág</h3>
+            <h4 class="card-title">Echinacea purpurea L.</h4>
+            <p>
+              Drogként a szárított virágzó hajtását és szárított gyökerét
+              (Echinaceae radix) használják.
+            </p>
+            <p>
+              Immunrendszert erősítő, belsőleg meghűléses, illetve felsőlégúti
+              és húgyúti megbetegedések megelőzésére használjuk.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Bodza-->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./img/bodzavirag.jpg" alt="Bodza" />
+            <div class="card-title">Bodza</div>
+          </div>
+          <div class="card-back">
+            <h3 class="card-title">Bodza</h3>
+            <h4 class="card-title">Sambucus nigra L.</h4>
+            <p>A drog a fekete bodza virága, valamint érett termése.</p>
+            <p>
+              Meghűléses megbetegedésekben izzasztó, váladékoldó, enyhe
+              vizelethajtó és hashajtó hatású.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Boróka-->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./img/boroka.jpg" alt="Boróka" />
+            <div class="card-title">Boróka</div>
+          </div>
+          <div class="card-back">
+            <h3 class="card-title">Boróka</h3>
+            <h4 class="card-title">Juniperus communis L.</h4>
+            <p>Gyógynövény</p>
+            <p>Drogja a tobozbogyó.</p>
+            <p>Serkenti az emésztést.</p>
+            <p>Vizelethajtó, enyhe görcsoldó.</p>
+          </div>
+        </div>
+      </div>
+      <!--Borsmenta-->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./img/borsosmenta.jpg" alt="Borsmenta" />
+            <div class="card-title">Borsmenta</div>
+          </div>
+          <div class="card-back">
+            <h3 class="card-title">Borsmenta</h3>
+            <h4 class="card-title">Mentha piperita L.</h4>
+            <p>Gyógynövény</p>
+            <p>Drogja a szárított levél és illóolaj.</p>
+            <p>
+              Gyógyhatása: Simaizom-görcsoldó, epehajtó és szélhajtó hatású.
+              Emésztési problémák, gyomor- és bélgörcsökre.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Cickafark-->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./img/cickafark.jpg" alt="Cickafark" />
+            <div class="card-title">Cickafark</div>
+          </div>
+          <div class="card-back">
+            <h3 class="card-title">Cickafark</h3>
+            <h4 class="card-title">Achillea millefolium L.</h4>
+            <p>Drogja a virágzó, föld feletti hajtása.</p>
+            <p>
+              Görcsoldó, antiszeptikus, bélhurut és étvágyjavjtóként használják.
+              Gyulladáscsökkentő ezért külsőleg ekcémára is hatásos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Citromfű-->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./img/citromfu.jpg" alt="Citromfű" />
+            <div class="card-title">Citromfű</div>
+          </div>
+          <div class="card-back">
+            <h3 class="card-title">Citromfű</h3>
+            <h4 class="card-title">Melissa officinalis L.</h4>
+            <p>Drogja a föld feletti szárított virág és levél.</p>
+            <p>Nyugtató, antibakteriális, antivirális hatású.</p>
+          </div>
+        </div>
+      </div>
+      <!--Csalán-->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./img/csalan.jpg" alt="Csalán" />
+            <div class="card-title">Csalán</div>
+          </div>
+          <div class="card-back">
+            <h3 class="card-title">Csalán</h3>
+            <h4 class="card-title">Urtica spp.</h4>
+            <p>Drogja a szárított levél.</p>
+            <p>
+              Gyógyhatása: vizelethatjó teák alkotórésze, ezenkívül használják
+              köszvény és reuma kezelésére is.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Csattanó maszlag-->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./img/csattanomaszlag.jpg" alt="Csattanó maszlag" />
+            <div class="card-title">Csattanó maszlag</div>
+          </div>
+          <div class="card-back">
+            <h3 class="card-title">Csattanó maszlag</h3>
+            <h4 class="card-title">Datura stramonium L.</h4>
+            <p>Drogját a virágzó növény levele adja.</p>
+            <p>
+              Tekintettel erős toxicitására (alkaloidokat tartalmaz) nem
+              tartozik a szabadon forgalmazható gyógynövény drogok közé.
+              Csökkenti a kiválasztást és a simaizmok görcskészségét.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+      <p>&copy; 2026 HerbaLex - Minden jog fenntartva.</p>
+    </footer>
+  </body>
+  <script src="js/toggle-menu.js"></script>
+</html>
