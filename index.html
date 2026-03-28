@@ -3,8 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HerbaLex - Gyógynövények egyszerűen felhasználásuk szerint</title>
+
+    <!--SEO cím-->
+    <title>Gyógynövények, teák és receptek | HerbaLex</title>
+
+    <!--szerző-->
     <meta name="author" content="lakyeni" />
+
+    <!--leírás-->
+    <meta
+      name="description"
+      content="HerbaLex – Gyógynövények egyszerűen. Ismerd meg a gyógynövények hatásait, teákat, recepteket és felhasználási területeket a természetes egészségért."
+    />
+
+    <!--kulcsszavak-->
+    <meta
+      name="keywords"
+      content="gyógynövények, fitoterápia, természetes egészség, gyógynövény tea, gyógynövény receptek"
+    />
+
+    <!--indexelés-->
+    <meta name="robots" content="index, follow" />
+
+    <!--open graph facebook-->
+    <meta property="og:title" content="HerbaLex - gyógynövények" />
+    <meta
+      property="og:description"
+      content="Fedezd fel a gyógynövények hatásait, teákat és recepteket a HerbaLex oldalán!"
+    />
+    <meta
+      property="og:image"
+      content="https://lakyeni.github.io/logo_zold.png"
+    />
+    <meta property="og:url" content="https://lakyeni.github.io" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="hu_HU" />
+
+    <!--favicon-->
+    <link rel="icon" href="./img/logo_favicon/favicon/favicon-32x32.png" />
+
+    <!--stílus,betűk-->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,16 +51,32 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <!--Navigáció-->
-    <nav class="nav">
-      <h2>Logo</h2>
+    <!--Másodlagos navigáció-->
+    <nav class="secondary-nav">
+      <ul class="secondary-menu">
+        <li><a href="fitotherapy.html">Fitoterápia</a></li>
+        <li><a href="./about.html">Rólunk</a></li>
+        <li><a href="./contact.html">Kapcsolat</a></li>
+      </ul>
+    </nav>
+
+    <!--FŐ - navigáció-->
+    <nav class="main-nav">
+      <a href="./index.html"
+        ><img
+          src="./img/logo_favicon/logo.png"
+          class="logo"
+          alt="Vállalat logója"
+          title="Válalat logója"
+      /></a>
       <ul class="menu">
         <li><a href="./index.html">Főoldal</a></li>
         <li><a href="./herbs.html">Gyógynövények</a></li>
         <li><a href="./area_of_use.html">Felhasználási területek</a></li>
-        <li><a href="./tees_&_recipes.html">Teák és receptek</a></li>
-        <li><a href="./contact.html">Kapcsolat</a></li>
+        <li><a href="./tees_and_recipes.html">Teák és receptek</a></li>
+        <li><a href="#newsletter">Hírlevél</a></li>
       </ul>
       <div class="hamburger" onclick="toggleMenu()">
         <div></div>
@@ -30,6 +84,7 @@
         <div></div>
       </div>
     </nav>
+
     <!--Header-->
     <header>
       <div class="hero-content">
@@ -40,47 +95,96 @@
           id="searchInput"
           placeholder="Keresés gyógynövényre..."
         />
-      <!--Mottó-->
+        <!--Mottó-->
       </div>
       <div class="motto"><i>„Tudás a természetből.”</i></div>
     </header>
 
-       <!--Wellcome message-->
-      <section class="wellcome">
-        <h2>Üdvözöljük a HerbaLexen!</h2>
-        <p>
-          Fedezze fel a gyógynövények világát egyszerűen és áttekinthetően! A
-          HerbaLex egy olyan online enciklopédia, amely a gyógynövényeket
-          felhasználási területeik szerint rendszerezi. Legyen szó gyógyászati
-          célokról, konyhai felhasználásról vagy szépségápolásról, nálunk
-          könnyedén megtalálhatja a megfelelő növényt. Böngésszen a
-          kategóriák között, és fedezze fel a természet csodáit!
-        </p>
-      </section>
-
-      <!--Slideshow blog-->
-
-    <main class="main-content">
-   
-      
-
-      <!--Cards-->
-      <div class="card-container">
-        <div class="card-purple">
-          <h2><a href="herbs.html">Fedezd fel a gyógynövényeket!</a></h2>
-        </div>
-        <div class="card-purple">
-          <h2>
-            <a href="area_of_use.html"
-              >Fedzed fel a felhasználási területeket!</a
-            >
-          </h2>
-        </div>
+    <!-- Blog articles-->
+    <main class="blog">
+      <h2>Kemelt hírek</h2>
+      <div class="posts">
+        <article class="post">
+          <a href="./wild_garlic.html">
+            <div>
+              <h3>Most gyűjtsd a medvehagymát!</h3>
+              <img
+                src="./img/wild_garlic_640x853.jpg"
+                alt="Medvehagyma virágzásban az erdő mélyén"
+                title="Medvehagyma"
+              />
+              <p>
+                A medvehagyma nemcsak finom, hanem kifejezetten egészséges is.
+                Magas C-vitamin-tartalma erősíti az immunrendszert, emellett
+                antibakteriális hatású. Segíthet a vérnyomás csökkentésében,
+                támogatja az emésztést, és kedvezően hathat a koleszterinszintre
+                is. Méregtelenítő hatása miatt sokan tavaszi tisztítókúrák
+                részeként fogyasztják.
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="post">
+          <a href="./fatigure.html">
+            <div>
+              <h3>Fáradtan ébredt ma is?</h3>
+              <img
+                src="./img/fatigue_640x427.jpg"
+                alt="Fáradt nő laptop előtt"
+                title="Téli fáradság"
+              />
+              <p>
+                Január közepén sokan ébrednek fáradtan, pedig eleget aludtak. A
+                sötét reggelek, a Blue Monday és az alvászavarok mind
+                hozzájárulnak a téli levertséghez. Szerencsére a gyógynövények
+                évszázadok óta segítenek ilyenkor – mutatjuk, hogyan.
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="post">
+          <a href="./alergic.html">
+            <div>
+              <h4>Mit tegyünk az allergia ellen?</h4>
+              <img
+                src="./img/alergic_472.jpg"
+                alt="medvehagyma erdőben"
+                title="medvehagyma"
+              />
+              <p>
+                A szervezet megtisztítása a hatékony allergiakezelés első
+                lépése. Ismerje meg a gyógynövények erejét a méregtelenítésben
+                és az allergiás tünetek enyhítésében.
+              </p>
+            </div>
+          </a>
+        </article>
       </div>
     </main>
+    <section id="newsletter" class="newsletter">
+      <h3>Csatlakozz a HerbaLex hírlevélhez!</h3>
+      <p>
+        Tippek, receptek és gyógynövényekről szóló érdekességek közvetlenül
+        az email fiókodba.
+      </p>
+      <form id="newsletterForm">
+        <input type="text" name="name" placeholder="Neved (opcionális)" />
+        <input type="email" name="email" placeholder="Email címed" required />
+        <button type="submit">Feliratkozás</button>
+      </form>
+      <p class="success-message" style="display: none">
+        Köszönjük, feliratkoztál!
+      </p>
+    </section>
 
     <footer>
-      <p>&copy; 2026 HerbaLex - Minden jog fenntartva.</p>
+      <ul class="secondary-nav-footer">
+        <li><a href="fitotherapy.html">Fitoterápia</a></li>
+        <li><a href="./about.html">Rólunk</a></li>
+        <li><a href="./contact.html">Kapcsolat</a></li>
+      </ul>
+
+      <p class="copyright">&copy; 2026 HerbaLex - Minden jog fenntartva.</p>
     </footer>
   </body>
   <script src="js/toggle-menu.js"></script>

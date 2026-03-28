@@ -1,10 +1,49 @@
 <!doctype html>
 <html lang="hu">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HerbaLex - Gyógynövények egyszerűen felhasználásuk szerint</title>
+    
+    <!--SEO cím-->
+    <title>Gyógynövények felhasználási területei | HerbaLex</title>
+
+    <!--szerző-->
     <meta name="author" content="lakyeni" />
+
+    <!--leírás-->
+    <meta
+      name="description"
+      content="HerbaLex – Gyógynövények egyszerűen. Ismerd meg a gyógynövények hatásait, teákat, recepteket és felhasználási területeket a természetes egészségért."
+    />
+
+    <!--kulcsszavak-->
+    <meta
+      name="keywords"
+      content="gyógynövények, fitoterápia, természetes egészség, gyógynövény tea, gyógynövény receptek"
+    />
+
+    <!--indexelés-->
+    <meta name="robots" content="index, follow" />
+
+    <!--open graph facebook-->
+    <meta property="og:title" content="HerbaLex - gyógynövények felhasználása" />
+    <meta
+      property="og:description"
+      content="Fedezd fel a gyógynövények felhasználási területeit a HerbaLex oldalán!"
+    />
+    <meta
+      property="og:image"
+      content="https://lakyeni.github.io/logo_zold.png"
+    />
+    <meta property="og:url" content="https://lakyeni.github.io" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="hu_HU" />
+
+    <!--favicon-->
+    <link rel="icon" href="./img/logo_favicon/favicon/favicon-32x32.png" />
+
+    <!--stílus,betűk-->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,41 +52,258 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <!--Navigáció-->
-    <nav class="nav">
-      <h2>Logo</h2>
-      <ul class="menu">
-        <li><a href="./index.html">Főoldal</a></li>
-        <li><a href="./herbs.html">Gyógynövények</a></li>
-        <li><a href="./area_of_use.html">Felhasználási területek</a></li>
-        <li><a href="./tees_&_recipes.html">Teák és receptek</a></li>
+
+<body>
+  <!--Másodlagos navigáció-->
+  <nav class="secondary-nav">
+    <ul>
+      <li><a href="fitotherapy.html">Fitoterápia</a></li>
+      <li><a href="./about.html">Rólunk</a></li>
+      <li><a href="./contact.html">Kapcsolat</a></li>
+    </ul>
+  </nav>
+
+  <!--FŐ - navigáció-->
+  <nav class="main-nav">
+    <a href="./index.html"><img src="./img/logo_favicon/logo.png" class="logo" alt="Vállalat logója" title="Válalat logója"></a>
+    <ul class="menu">
+      <li><a href="./index.html">Főoldal</a></li>
+      <li><a href="./herbs.html">Gyógynövények</a></li>
+      <li><a href="./area_of_use.html">Felhasználási területek</a></li>
+      <li><a href="./tees_and_recipes.html">Teák és receptek</a></li>
+      <li><a href="index.html#newsletter">Hírlevél</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+  <!--Header-->
+  <header>
+    <div class="hero-content">
+      <h1 class="hero-title">HerbaLex</h1>
+      <input class="search-input" type="text" id="searchInput" placeholder="Keresés gyógynövényre..." />
+      <!--Mottó-->
+    </div>
+    <div class="motto"><i>„Tudás a természetből.”</i></div>
+  </header>
+  <!--Felhasználási területek-->
+  <h2 class="title-catalog">Felhasználási területek</h2>
+  <section class="catalog">
+    <!--Alvászavar-->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/use/insomnia_640x960.jpg" alt="Alvászavarban szenvedő nő" />
+          <div class="card-title">Alvászavar</div>
+        </div>
+        <div class="card-back">
+          <h3 class="card-title">Alvászavar</h3>
+          <h4 class="card-title-latin">Insomnia</h4>
+          <p>Gyakori állapot, amelyben az érintett nehezen alszik el, gyakran
+            felébred éjszaka, vagy túl korán felkel, és nem tud visszaaludni.</p>
+          <p>Gyógynövényei:</p>
+          <ul>
+            <li>citromfű</li>
+            <li>levendula</li>
+            <li>macskagyökér</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Alacsony vérnyomás-->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/use/hypotensio_640x959.jpg" alt="Vérnyomásmérés" />
+          <div class="card-title">Alacsony vérnyomás</div>
+        </div>
+        <div class="card-back">
+          <h3 class="card-title">Alacsony vérnyomás</h3>
+          <h4 class="card-title-latin">Hypotensio</h4>
+          <p>A vérnyomás tartósan a normálisnál alacsonyabb. Tünetei közé tartozik a szédülés, ájulás. </p>
+          <p>Gyógynövényei:</p>
+          <ul>
+            <li>csalán</li>
+            <li>rozmaring</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Aranyér-->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/use/hemorrhoids_640x480.jpg" alt="Wc csésze wc papírral a tetején" />
+          <div class="card-title">Aranyér</div>
+        </div>
+        <div class="card-back">
+          <h3 class="card-title">Aranyér</h3>
+          <h4 class="card-title-latin">Hemorrhoides</h4>
+          <p> Az aranyér a végbél és a végbélnyílás vénás hálózatának kitágulása, gyulladása vagy csomósodása. Lehet
+            belső (végbél belső falán) vagy külső (végbélnyílás körül).
+          </p>
+          <p>Gyógynövényei:</p>
+          <ul>
+            <li>kamilla</li>
+            <li>máriatövis</li>
+            <li>vadgesztenye</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Arcüreggyulladás-->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/use/sinusitis_640x427.jpg" alt="Arcüreggyulladás egy betegnél" />
+          <div class="card-title">Arcüreggyulladás</div>
+        </div>
+        <div class="card-back">
+          <h3 class="card-title">Arcüreggyulladás</h3>
+          <h4 class="card-title-latin">Sinutitis</h4>
+          <p>Az (arc-)üregek nyálkahártyájának gyulladása, leggyakrabban vírusos vagy bakteriális
+            fertőzés miatt. Tünetei közé tartozik az arcfájdalom vagy nyomásérzés (homlok, orcák, szem környéke),
+            orrfolyás, fejfájás.</p>
+          <p>Gyógynövényei:</p>
+          <ul>
+            <li>kamilla</li>
+            <li>cickafark</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Csalánkiütés-->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/use/urticaria_640_960.jpg" alt="Viszkető,piros bőr." />
+          <div class="card-title">Csalánkiütés</div>
+        </div>
+        <div class="card-back">
+          <h3 class="card-title">Csalánkiütés</h3>
+          <h4 class="card-title-latin">Urticaria</h4>
+          <p>A bőr hirtelen jelentkező, viszkető, piros vagy hólyagos kiütése, amely általában allergiás reakció,
+            gyógyszer, élelmiszer vagy fizikai inger hatására alakul ki.</p>
+          <p>Gyógynövényei:</p>
+          <ul>
+            <li>kamilla</li>
+            <li>csalán</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Csontkinövés-->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/use/Exostosis_702x398.png" alt="Borsmenta" />
+          <div class="card-title">Csontkinövés</div>
+        </div>
+        <div class="card-back">
+          <h3 class="card-title">Csontkinövés</h3>
+          <h4 class="card-title-latin">Exostosis</h4>
+          <p>Csontból kiemelkedő, jóindulatú növedék, amely gyakran a csont felszínén alakul ki, és lehet veleszületett
+            vagy szerzett (pl. túlterhelés, sérülés következtében).</p>
+          <p>Gyógynövényei:</p>
+          <ul>
+            <li>fekete nadálytő</li>
+            <li>cickafark</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Epefájdalom-->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/use/Dolor_biliaris_640x360.jpg" alt="Szúró, görcsös fájdalom gyomor tájékon." />
+          <div class="card-title">Epefájdalom</div>
+        </div>
+        <div class="card-back">
+          <h3 class="card-title">Epefájdalom</h3>
+          <h4 class="card-title-latin">Dolor biliaris</h4>
+          <p>Drogja a virágzó, föld feletti hajtása.</p>
+          <p>Az epeutak területén jelentkező hirtelen, görcsös jellegű fájdalom, gyakran étkezés után, különösen zsíros
+            ételek fogyasztásakor.</p>
+          <p>Gyógynövényei:</p>
+          <ul>
+            <li>köménymag</li>
+            <li>borsmenta</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Fejfájás | Migrén-->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/use/cephalalgia_Migraine_640x960.jpg" alt="Erős fejfájás." />
+          <div class="card-title">Fejfájás, migérn</div>
+        </div>
+        <div class="card-back">
+          <h3 class="card-title">Fejfájás, migérn</h3>
+          <h4 class="card-title-latin">Cephalalgia, migraine</h4>
+          <p>Erős, gyakran féloldali fejfájás, amelyhez hányinger, hányás, fény- és hangérzékenység társulhat.</p>
+          <p>Gyógynövényei:</p>
+          <ul>
+            <li>borsmenta</li>
+            <li>cickafark</li>
+            <li>fehér fagyöngy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Influenza-->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/use/influenza_640x960.jpg" alt="Orrfújás gyermeknél." />
+          <div class="card-title">Influenza</div>
+        </div>
+        <div class="card-back">
+          <h3 class="card-title">Influenza</h3>
+          <h4 class="card-title-latin">Influenza</h4>
+          <p>Vírusos légúti fertőzés, amely hirtelen kezdődő lázzal, izomfájdalmakkal és erős fáradtsággal jár.</p>
+          <p>Gyógynövényei:</p>
+          <ul>
+            <li>kamilla</li>
+            <li>cickafark</li>
+        </div>
+      </div>
+    </div>
+    <!--Köhögés-->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/use/tussis_640x480.jpg" alt="Könyökhajlatba köhögő férfi." />
+          <div class="card-title">Köhögés</div>
+        </div>
+        <div class="card-back">
+          <h3 class="card-title">Köhögés</h3>
+          <h4 class="card-title-latin">Tussis</h4>
+          <p>légutak reflexszerű reakciója, melynek célja a nyálka, irritáló anyagok vagy idegen testek eltávolítása a
+            légutakból. Lehet száraz (ingergörcs) vagy produktív (váladékos).</p>
+          <p>Gyógynövényei:</p>
+          <ul>
+            <li>kakukkfű</li>
+            <li>hársvirág</li>
+            <li>édeskömény</li>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+      <ul class="secondary-nav-footer">
+        <li><a href="fitotherapy.html">Fitoterápia</a></li>
+        <li><a href="./about.html">Rólunk</a></li>
         <li><a href="./contact.html">Kapcsolat</a></li>
       </ul>
-      <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </nav>
-    <!--Header-->
-    <header>
-      <div class="hero-content">
-        <h1 class="hero-title">HerbaLex</h1>
-        <input
-          class="search-input"
-          type="text"
-          id="searchInput"
-          placeholder="Keresés gyógynövényre..."
-        />
-      <!--Mottó-->
-      </div>
-      <div class="motto"><i>„Tudás a természetből.”</i></div>
-    </header>
 
-    <footer>
-        <p>&copy; 2026 HerbaLex - Minden jog fenntartva.</p>
+      <p class="copyright">&copy; 2026 HerbaLex - Minden jog fenntartva.</p>
     </footer>
-  </body>
-  <script src="js/toggle-menu.js"></script>
+</body>
+<script src="js/toggle-menu.js"></script>
+
 </html>

@@ -3,8 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HerbaLex - Gyógynövények egyszerűen felhasználásuk szerint</title>
+
+    <!--SEO cím-->
+    <title>Gyógynövény-katalógus | HerbaLex</title>
+
+    <!--szerző-->
     <meta name="author" content="lakyeni" />
+
+    <!--leírás-->
+    <meta
+      name="description"
+      content="Fedezd fel a HerbaLex gyógynövény-katalógusát! Ismerd meg a gyógynövények hatásait, felhasználási területeit, teákat és recepteket a természetes egészségért."
+    />
+
+    <!--kulcsszavak-->
+    <meta
+      name="keywords"
+      content="gyógynövények, fitoterápia, teák, gyógynövény receptek, természetes egészség"
+    />
+
+    <!--indexelés-->
+    <meta name="robots" content="index, follow" />
+
+    <!--open graph facebook-->
+    <meta property="og:title" content="Gyógynövény-katalógus | HerbaLex" />
+    <meta
+      property="og:description"
+      content="Fedezd fel a gyógynövények hatásait és felhasználásukat."
+    />
+    <meta
+      property="og:image"
+      content="https://lakyeni.github.io/logo_zold.png"
+    />
+    <meta property="og:url" content="https://lakyeni.github.io" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="hu_HU" />
+
+    <!--favicon-->
+    <link rel="icon" href="./img/logo_favicon/favicon/favicon-32x32.png" />
+
+    <!--stílus,betűk-->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,16 +51,32 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <!--Navigáció-->
-    <nav class="nav">
-      <h2>Logo</h2>
+    <!--Másodlagos navigáció-->
+    <nav class="secondary-nav">
+      <ul>
+        <li><a href="fitotherapy.html">Fitoterápia</a></li>
+        <li><a href="./about.html">Rólunk</a></li>
+        <li><a href="./contact.html">Kapcsolat</a></li>
+      </ul>
+    </nav>
+
+    <!--FŐ - navigáció-->
+    <nav class="main-nav">
+      <a href="./index.html"
+        ><img
+          src="./img/logo_favicon/logo.png"
+          class="logo"
+          alt="Vállalat logója"
+          title="Válalat logója"
+      /></a>
       <ul class="menu">
         <li><a href="./index.html">Főoldal</a></li>
         <li><a href="./herbs.html">Gyógynövények</a></li>
         <li><a href="./area_of_use.html">Felhasználási területek</a></li>
-        <li><a href="./tees_&_recipes.html">Teák és receptek</a></li>
-        <li><a href="./contact.html">Kapcsolat</a></li>
+        <li><a href="./tees_and_recipes.html">Teák és receptek</a></li>
+        <li><a href="index.html#newsletter">Hírlevél</a></li>
       </ul>
       <div class="hamburger" onclick="toggleMenu()">
         <div></div>
@@ -49,25 +103,28 @@
     <h2 class="title-catalog">Gyógynövény-katalógus</h2>
     <section class="catalog">
       <!--Ánizs-->
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="./img/anizs.jpg" alt="Ánizs" />
-            <div class="card-title">Ánizs</div>
+      <!-- <a
+        href="https://hu.wikipedia.org/wiki/%C3%81nizs"
+        > --><div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="./img/anizs.jpg" alt="Ánizs" />
+              <div class="card-title">Ánizs</div>
+            </div>
+            <div class="card-back">
+              <h3 class="card-title">Ánizs</h3>
+              <h4 class="card-title-latin">Pimpinella anisum L.</h4>
+              <p>Fűszernövény</p>
+              <p>
+                Főzelékek, vadas ételek, mártások ízesítésére, de édességekbe is
+                használják.
+              </p>
+              <p>Likőrgyártásban jelentős.</p>
+              <p>Gógyhatása: étvágyjavító, emésztést serkentő, vértisztító.</p>
+            </div>
           </div>
-          <div class="card-back">
-            <h3 class="card-title">Ánizs</h3>
-            <h4 class="card-title">Pimpinella anisum L.</h4>
-            <p>Fűszernövény</p>
-            <p>
-              Főzelékek, vadas ételek, mártások ízesítésére, de édességekbe is
-              használják.
-            </p>
-            <p>Likőrgyártásban jelentős.</p>
-            <p>Gógyhatása: étvágyjavító, emésztést serkentő, vértisztító.</p>
-          </div>
-        </div>
-      </div>
+        </div> <!--</a
+      >-->
       <!--Aranyvessző-->
       <div class="card">
         <div class="card-inner">
@@ -77,7 +134,7 @@
           </div>
           <div class="card-back">
             <h3 class="card-title">Aranyvessző</h3>
-            <h4 class="card-title">Solidago spp.</h4>
+            <h4 class="card-title-latin">Solidago spp.</h4>
             <p>Gyógynövény</p>
             <p>
               Gyógyhatása: Vizelethajtó, gyulladáscsökkentő és immunrendszert
@@ -95,7 +152,7 @@
           </div>
           <div class="card-back">
             <h3 class="card-title">Bíbor kasvirág</h3>
-            <h4 class="card-title">Echinacea purpurea L.</h4>
+            <h4 class="card-title-latin">Echinacea purpurea L.</h4>
             <p>
               Drogként a szárított virágzó hajtását és szárított gyökerét
               (Echinaceae radix) használják.
@@ -116,7 +173,7 @@
           </div>
           <div class="card-back">
             <h3 class="card-title">Bodza</h3>
-            <h4 class="card-title">Sambucus nigra L.</h4>
+            <h4 class="card-title-latin">Sambucus nigra L.</h4>
             <p>A drog a fekete bodza virága, valamint érett termése.</p>
             <p>
               Meghűléses megbetegedésekben izzasztó, váladékoldó, enyhe
@@ -134,7 +191,7 @@
           </div>
           <div class="card-back">
             <h3 class="card-title">Boróka</h3>
-            <h4 class="card-title">Juniperus communis L.</h4>
+            <h4 class="card-title-latin">Juniperus communis L.</h4>
             <p>Gyógynövény</p>
             <p>Drogja a tobozbogyó.</p>
             <p>Serkenti az emésztést.</p>
@@ -151,7 +208,7 @@
           </div>
           <div class="card-back">
             <h3 class="card-title">Borsmenta</h3>
-            <h4 class="card-title">Mentha piperita L.</h4>
+            <h4 class="card-title-latin">Mentha piperita L.</h4>
             <p>Gyógynövény</p>
             <p>Drogja a szárított levél és illóolaj.</p>
             <p>
@@ -170,7 +227,7 @@
           </div>
           <div class="card-back">
             <h3 class="card-title">Cickafark</h3>
-            <h4 class="card-title">Achillea millefolium L.</h4>
+            <h4 class="card-title-latin">Achillea millefolium L.</h4>
             <p>Drogja a virágzó, föld feletti hajtása.</p>
             <p>
               Görcsoldó, antiszeptikus, bélhurut és étvágyjavjtóként használják.
@@ -188,7 +245,7 @@
           </div>
           <div class="card-back">
             <h3 class="card-title">Citromfű</h3>
-            <h4 class="card-title">Melissa officinalis L.</h4>
+            <h4 class="card-title-latin">Melissa officinalis L.</h4>
             <p>Drogja a föld feletti szárított virág és levél.</p>
             <p>Nyugtató, antibakteriális, antivirális hatású.</p>
           </div>
@@ -203,7 +260,7 @@
           </div>
           <div class="card-back">
             <h3 class="card-title">Csalán</h3>
-            <h4 class="card-title">Urtica spp.</h4>
+            <h4 class="card-title-latin">Urtica spp.</h4>
             <p>Drogja a szárított levél.</p>
             <p>
               Gyógyhatása: vizelethatjó teák alkotórésze, ezenkívül használják
@@ -221,7 +278,7 @@
           </div>
           <div class="card-back">
             <h3 class="card-title">Csattanó maszlag</h3>
-            <h4 class="card-title">Datura stramonium L.</h4>
+            <h4 class="card-title-latin">Datura stramonium L.</h4>
             <p>Drogját a virágzó növény levele adja.</p>
             <p>
               Tekintettel erős toxicitására (alkaloidokat tartalmaz) nem
@@ -235,7 +292,13 @@
 
     <!--Footer-->
     <footer>
-      <p>&copy; 2026 HerbaLex - Minden jog fenntartva.</p>
+      <ul class="secondary-nav-footer">
+        <li><a href="fitotherapy.html">Fitoterápia</a></li>
+        <li><a href="./about.html">Rólunk</a></li>
+        <li><a href="./contact.html">Kapcsolat</a></li>
+      </ul>
+
+      <p class="copyright">&copy; 2026 HerbaLex - Minden jog fenntartva.</p>
     </footer>
   </body>
   <script src="js/toggle-menu.js"></script>

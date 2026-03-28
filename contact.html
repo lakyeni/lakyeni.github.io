@@ -1,10 +1,48 @@
 <!doctype html>
 <html lang="hu">
-  <head>
+   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HerbaLex - Gyógynövények egyszerűen felhasználásuk szerint</title>
+    
+    <!--SEO cím-->
+    <title>Kapcsolat| HerbaLex</title>
+
+    <!--szerző-->
     <meta name="author" content="lakyeni" />
+
+    <!--leírás-->
+    <meta
+      name="description"
+      content="HerbaLex – Gyógynövények egyszerűen. Ismerd meg a gyógynövények hatásait, teákat, recepteket és felhasználási területeket a természetes egészségért."
+    />
+
+    <!--kulcsszavak-->
+    <meta
+      name="keywords"
+      content="gyógynövények, fitoterápia, természetes egészség, gyógynövény tea, gyógynövény receptek"
+    />
+
+    <!--indexelés-->
+    <meta name="robots" content="index, follow" />
+
+    <!--open graph facebook-->
+    <meta property="og:title" content="HerbaLex - kapcsolat" />
+    <meta
+      property="og:description"
+      content="Keress fel minket!"
+    />
+    <meta
+      property="og:image"
+      content="https://lakyeni.github.io/logo_zold.png"
+    />
+    <meta property="og:url" content="https://lakyeni.github.io" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="hu_HU" />
+
+    <!--favicon-->
+    <link rel="icon" href="./img/logo_favicon/favicon/favicon-32x32.png" />
+
+    <!--stílus,betűk-->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,22 +52,31 @@
     />
   </head>
   <body>
-    <!--Navigáció-->
-    <nav class="nav">
-      <h2>Logo</h2>
-      <ul class="menu">
-        <li><a href="./index.html">Főoldal</a></li>
-        <li><a href="./herbs.html">Gyógynövények</a></li>
-        <li><a href="./area_of_use.html">Felhasználási területek</a></li>
-        <li><a href="./tees_&_recipes.html">Teák és receptek</a></li>
-        <li><a href="./contact.html">Kapcsolat</a></li>
-      </ul>
-      <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </nav>
+    <!--Másodlagos navigáció-->
+  <nav class="secondary-nav">
+    <ul>
+      <li><a href="fitotherapy.html">Fitoterápia</a></li>
+      <li><a href="./about.html">Rólunk</a></li>
+      <li><a href="./contact.html">Kapcsolat</a></li>
+    </ul>
+  </nav>
+
+  <!--FŐ - navigáció-->
+  <nav class="main-nav">
+    <a href="./index.html"><img src="./img/logo_favicon/logo.png" class="logo" alt="Vállalat logója" title="Válalat logója"></a>
+    <ul class="menu">
+      <li><a href="./index.html">Főoldal</a></li>
+      <li><a href="./herbs.html">Gyógynövények</a></li>
+      <li><a href="./area_of_use.html">Felhasználási területek</a></li>
+      <li><a href="./tees_and_recipes.html">Teák és receptek</a></li>
+      <li><a href="index.html#newsletter">Hírlevél</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
     <!--Header-->
     <header>
       <div class="hero-content">
@@ -45,7 +92,7 @@
       <div class="motto"><i>„Tudás a természetből.”</i></div>
     </header>
   <!-- kapcsolat-->
-   <div class="wellcome">
+   <div class="welcome">
       <h2>Kapcsolat</h2>
       <p>Ha kérdése van, vagy szeretne kapcsolatba lépni velünk, kérjük, használja az alábbi elérhetőségeket:</p>
       <br>
@@ -68,7 +115,13 @@
     </div>
 
     <footer>
-      <p>&copy; 2026 HerbaLex - Minden jog fenntartva.</p>
+      <ul class="secondary-nav-footer">
+        <li><a href="fitotherapy.html">Fitoterápia</a></li>
+        <li><a href="./about.html">Rólunk</a></li>
+        <li><a href="./contact.html">Kapcsolat</a></li>
+      </ul>
+
+      <p class="copyright">&copy; 2026 HerbaLex - Minden jog fenntartva.</p>
     </footer>
   </body>
   <script src="js/toggle-menu.js"></script>
