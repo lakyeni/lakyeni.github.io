@@ -44,9 +44,9 @@
   <!--Másodlagos navigáció-->
   <nav class="secondary-nav">
     <ul>
-      <li><a href="fitotherapy.html">Fitoterápia</a></li>
-      <li><a href="./about.html">Rólunk</a></li>
-      <li><a href="./contact.html">Kapcsolat</a></li>
+      <li><a href="fitoterapia.html">Fitoterápia</a></li>
+      <li><a href="./rolunk.html">Rólunk</a></li>
+      <li><a href="./kapcsolat.html">Kapcsolat</a></li>
     </ul>
   </nav>
 
@@ -55,9 +55,9 @@
     <a href="./index.html"><img src="./img/logo_favicon/logo.png" class="logo" alt="Vállalat logója" title="Válalat logója"></a>
     <ul class="menu">
       <li><a href="./index.html">Főoldal</a></li>
-      <li><a href="./herbs.html">Gyógynövények</a></li>
-      <li><a href="./area_of_use.html">Felhasználási területek</a></li>
-      <li><a href="./tees_and_recipes.html">Teák és receptek</a></li>
+      <li><a href="./gyogynovenyek.html">Gyógynövények</a></li>
+      <li><a href="./felhasznalasi_teruletek.html">Felhasználási területek</a></li>
+      <li><a href="./teak_es_receptek.html">Teák és receptek</a></li>
       <li><a href="index.html#newsletter">Hírlevél</a></li>
     </ul>
     <div class="hamburger" onclick="toggleMenu()">
@@ -69,15 +69,15 @@
   <!--Header-->
   <header>
     <div class="hero-content">
-      <h1 class="hero-title">HerbaLex</h1>
+      <h1 class="hero-title">Teák és receptek</h1>
       <input class="search-input" type="text" id="searchInput" placeholder="Keresés gyógynövényre..." />
       <!--Mottó-->
     </div>
     <div class="motto"><i>„Tudás a természetből.”</i></div>
   </header>
   <section class="welcome">
-    <h2>Teák és receptek</h2>
-    <p>A gyógynövényekből készült tea, ázalék, forrázat, főzet és társai mind különböző készítési módokat jelentenek, a
+    <!--<h2>Teák és receptek</h2>-->
+    <p class="border">A gyógynövényekből készült tea, ázalék, forrázat, főzet és társai mind különböző készítési módokat jelentenek, a
       hatóanyagok kioldódása és az alkalmazás módja szerint.</p>
     <!--Gyógynövény tea-->
     <article class="text">
@@ -100,6 +100,7 @@
         (ált. 5 és 15 perc
         között), majd leszűrjük.</p>
     </article>
+    <hr>
     <!--Forrázat-->
     <article class="text">
       <h4>Gyógynövény-forrázat</h4>
@@ -115,6 +116,7 @@
 
       <p><b>Elkészítés:</b> A növényi részt forró vízben rövid ideig áztatjuk (ált. 5–15 perc), majd leszűrjük.</p>
     </article>
+    <hr>
     <!--Ázalék-->
     <article class="text">
       <h4>Gyógynövény-ázalék</h4>
@@ -132,16 +134,104 @@
       <p><b>Elkészítés:</b>A növényi részt hideg vagy langyos vízbe áztatjuk hosszabb ideig (óra–egy éjszaka)</p>
     </article>
   </section>
+  <section class="catalog">
+  <!--Nyugtató és alvást segítő tea-->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/use/citromfu_tea_640x960.jpg" alt="Citromfű tea" />
+          <div class="card-title">Nyugtató és alvást segítő tea</div>
+        </div>
+        <div class="card-back">
+          <h3 class="card-title">Nyugtató és alvást segítő tea</h3>
+          <p>Hozzávalók:</p>
+          <ul>
+            <li>1 tk kamillavirág</li>
+            <li>1 tk citromfű</li>
+            <li>1 tk levendula</li>
+          </ul>
+          <p>A gyógynövényeket tegyük egy csészébe.
+            Öntsünk rá 250 ml forró vizet.
+            Szűrjük le és fogyasszuk lefekvés előtt.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Emésztést segítő tea-->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/use/emesztes_tea_640x858.jpg" alt="Emésztést segítő tea" />
+          <div class="card-title">Emésztést segítő tea</div>
+        </div>
+        <div class="card-back">
+          <h3 class="card-title">Emésztést segítő tea</h3>
+          <p>Hozzávalók:</p>
+          <ul>
+            <li>1 tk borsmenta</li>
+            <li>1 tk édeskömény</li>
+            <li>1 szelet friss gyömbér</li>
+          </ul>
+          <p>Öntsünk 250 ml forró vizet a gyógynövényekre és a gyömbérre.
+            Hagyjuk 7-10 percig állni, majd szűrjük le.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Megfázás és torokfájás ellen-->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/use/hars_tea_640x960.jpg" alt="Citromfű tea" />
+          <div class="card-title">Megfázás és torokfájás ellen</div>
+        </div>
+        <div class="card-back">
+          <h3 class="card-title">Megfázás és torokfájás ellen</h3>
+          <p>Hozzávalók:</p>
+          <ul>
+            <li>1 tk kakukkfű</li>
+            <li>1 tk hársvirág</li>
+            <li>1 tk bodzavirág</li>
+          </ul>
+          <p>Öntsünk 250 ml forró vizet a gyógynövényekre.
+            Ízesítsük mézzel, ha szeretnénk.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Vese- és húgyúti tisztító tea-->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/use/vese_tea_640x960.jpg" alt="Vese- és húgyúti tisztító tea" />
+          <div class="card-title">Vese- és húgyúti tisztító tea</div>
+        </div>
+        <div class="card-back">
+          <h3 class="card-title">Vese- és húgyúti tisztító tea</h3>
+          <p>Hozzávalók:</p>
+          <ul>
+            <li>1 tk csalánlevél</li>
+            <li>1 tk mezei zsurló</li>
+            <li>1 tk lpetrezselyem</li>
+          </ul>
+          <p>Öntsünk 250 ml forró vizet a gyógynövényekre.
+            Hagyjuk 10 percig ázni, majd szűrjük le.
+            Naponta 1-2 csészével fogyasszunk.
+          </p>
+        </div>
+      </div>
+    </div>
+    </section>
   <footer>
       <ul class="secondary-nav-footer">
-        <li><a href="fitotherapy.html">Fitoterápia</a></li>
-        <li><a href="./about.html">Rólunk</a></li>
-        <li><a href="./contact.html">Kapcsolat</a></li>
+        <li><a href="fitoterapia.html">Fitoterápia</a></li>
+        <li><a href="./rolunk.html">Rólunk</a></li>
+        <li><a href="./kapcsolat.html">Kapcsolat</a></li>
       </ul>
 
       <p class="copyright">&copy; 2026 HerbaLex - Minden jog fenntartva.</p>
     </footer>
 </body>
-<script src="js/toggle-menu.js"></script>
+<script src="js/index.js"></script>
 
 </html>

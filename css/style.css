@@ -207,6 +207,15 @@ main.blog {
 
 .blog h2 {
   color: purple;
+  margin: 30px 0 30px 0;
+}
+
+.cikk h3 {
+  margin-bottom: 20px;
+}
+
+.cikk img {
+  margin-bottom: 20px;
 }
 
 .posts {
@@ -303,7 +312,7 @@ main.blog {
 
 .welcome h2 {
   font-size: 2rem;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   color: purple;
   text-shadow: rgba(255, 255, 255, 0.801);
 }
@@ -434,12 +443,16 @@ section.catalog {
   width: 90%;
   margin: 20px auto;
   text-align: justify;
-  border-top: 1px solid rgb(15, 77, 13);
-  padding-top: 20px;
+  padding: 20px 0 20px 0;
+}
+
+.border {
+  padding: 20px;
+  border-bottom: 1px solid rgb(15, 77, 13);
 }
 
 .text h4 {
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
 }
 
 .text p {
@@ -448,10 +461,10 @@ section.catalog {
 
 .text-img {
   float: right;
-  width: 80%;
-  max-width: 200px;
+  clear: both;
+  max-width: 50%;
   height: auto;
-  margin: 10px;
+  margin: 20px;
 }
 
 /*Megjegyzés, rólunk, vizsgamunka */
@@ -538,6 +551,54 @@ footer {
   }
 }
 
+.newsletter-atfedes {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(5px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+/*aktiv allapotban */
+.newsletter-atfedes.active {
+  opacity: 1;
+  visibility: visible;
+
+}
+
+.atfedes-kontener {
+  background-color: white;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 400px;
+  transform: scale(0.8);
+  transition: 0.3s ease;
+}
+
+.newsletter-atfedes.active .atfedes-kontener {
+  transform: scale(1);
+}
+
+.atfedes-kontener button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
 /*tablet méret */
 @media (min-width: 1144px) {
   nav.secondary-nav ul {
@@ -545,7 +606,13 @@ footer {
   }
 
   header {
-    height: 50vh;
+    height: 40vh;
+  }
+
+  section.catalog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
 
   .hero-title {
@@ -575,7 +642,7 @@ footer {
   .hamburger {
     display: none;
   }
-  
+
   .menu {
     display: flex;
     flex-direction: row;
@@ -590,12 +657,13 @@ footer {
   }
 
   header {
-    height: 50vh;
+    height: 40vh;
   }
 
   section.catalog {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
   }
 
   .newsletter {
@@ -611,6 +679,27 @@ footer {
   .post {
     flex: 1;
     max-width: 35%;
+  }
+
+  .text-img {
+    max-width: 50%;
+    margin: 30px;
+  }
+
+  .welcome h2 {
+    margin-bottom: 50px;
+  }
+
+  .blog h2 {
+    margin: 30px 0 30px 0;
+  }
+
+  .cikk h3 {
+    margin-bottom: 20px;
+  }
+
+  .cikk img {
+    margin-bottom: 20px;
   }
 }
 
@@ -637,7 +726,7 @@ footer {
     width: 40%;
   }
   header {
-    height: 60vh;
+    height: 50vh;
   }
 
   .menu {
@@ -655,6 +744,7 @@ footer {
   section.catalog {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
   }
 
   .posts {
@@ -669,6 +759,23 @@ footer {
   }
   .secondary-nav-footer {
     display: none;
+  }
+
+  .text-img {
+    max-width: 50%;
+    margin: 30px;
+  }
+
+  .blog h2 {
+    margin: 30px 0 30px 0;
+  }
+
+  .cikk h3 {
+    margin-bottom: 20px;
+  }
+
+  .cikk img {
+    margin-bottom: 20px;
   }
 }
 

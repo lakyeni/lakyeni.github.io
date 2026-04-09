@@ -56,9 +56,9 @@
     <!--Másodlagos navigáció-->
     <nav class="secondary-nav">
       <ul>
-        <li><a href="fitotherapy.html">Fitoterápia</a></li>
-        <li><a href="./about.html">Rólunk</a></li>
-        <li><a href="./contact.html">Kapcsolat</a></li>
+        <li><a href="fitoterapia.html">Fitoterápia</a></li>
+        <li><a href="./rolunk.html">Rólunk</a></li>
+        <li><a href="./kapcsolat.html">Kapcsolat</a></li>
       </ul>
     </nav>
 
@@ -73,9 +73,11 @@
       /></a>
       <ul class="menu">
         <li><a href="./index.html">Főoldal</a></li>
-        <li><a href="./herbs.html">Gyógynövények</a></li>
-        <li><a href="./area_of_use.html">Felhasználási területek</a></li>
-        <li><a href="./tees_and_recipes.html">Teák és receptek</a></li>
+        <li><a href="./gyogynovenyek.html">Gyógynövények</a></li>
+        <li>
+          <a href="./felhasznalasi_teruletek.html">Felhasználási területek</a>
+        </li>
+        <li><a href="./teak_es_receptek.html">Teák és receptek</a></li>
         <li><a href="index.html#newsletter">Hírlevél</a></li>
       </ul>
       <div class="hamburger" onclick="toggleMenu()">
@@ -87,7 +89,7 @@
     <!--Header-->
     <header>
       <div class="hero-content">
-        <h1 class="hero-title">HerbaLex</h1>
+        <h1 class="hero-title">Gyógynövény-katalógus</h1>
         <input
           class="search-input"
           type="text"
@@ -100,33 +102,31 @@
     </header>
     <!-- Gyógynövények katalógusa-->
 
-    <h2 class="title-catalog">Gyógynövény-katalógus</h2>
+    <!--<h2 class="title-catalog">Gyógynövény-katalógus</h2>-->
     <section class="catalog">
       <!--Ánizs-->
-      <!-- <a
-        href="https://hu.wikipedia.org/wiki/%C3%81nizs"
-        > --><div class="card">
-          <div class="card-inner">
-            <div class="card-front">
-              <img src="./img/anizs.jpg" alt="Ánizs" />
-              <div class="card-title">Ánizs</div>
-            </div>
-            <div class="card-back">
-              <h3 class="card-title">Ánizs</h3>
-              <h4 class="card-title-latin">Pimpinella anisum L.</h4>
-              <p>Fűszernövény</p>
-              <p>
-                Főzelékek, vadas ételek, mártások ízesítésére, de édességekbe is
-                használják.
-              </p>
-              <p>Likőrgyártásban jelentős.</p>
-              <p>Gógyhatása: étvágyjavító, emésztést serkentő, vértisztító.</p>
-            </div>
+      <div class="card" id="anizs">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./img/anizs.jpg" alt="Ánizs" />
+            <div class="card-title">Ánizs</div>
           </div>
-        </div> <!--</a
-      >-->
+          <div class="card-back">
+            <h3 class="card-title">Ánizs</h3>
+            <h4 class="card-title-latin">Pimpinella anisum L.</h4>
+            <p>Fűszernövény</p>
+            <p>
+              Főzelékek, vadas ételek, mártások ízesítésére, de édességekbe is
+              használják.
+            </p>
+            <p>Likőrgyártásban jelentős.</p>
+            <p>Gógyhatása: étvágyjavító, emésztést serkentő, vértisztító.</p>
+          </div>
+        </div>
+      </div>
+  
       <!--Aranyvessző-->
-      <div class="card">
+      <div class="card" id="aranyvesszo">
         <div class="card-inner">
           <div class="card-front">
             <img src="./img/aranyvesszo.jpg" alt="Aranyvessző" />
@@ -143,8 +143,8 @@
           </div>
         </div>
       </div>
-      <!--Bíborkasvirág-->
-      <div class="card">
+      <!--Bíbor kasvirág-->
+      <div class="card" id="biborkasvirag">
         <div class="card-inner">
           <div class="card-front">
             <img src="./img/biborkasvirag.jpg" alt="Bíbor kasvirág" />
@@ -165,7 +165,7 @@
         </div>
       </div>
       <!--Bodza-->
-      <div class="card">
+      <div class="card" id="bodza">
         <div class="card-inner">
           <div class="card-front">
             <img src="./img/bodzavirag.jpg" alt="Bodza" />
@@ -183,7 +183,7 @@
         </div>
       </div>
       <!--Boróka-->
-      <div class="card">
+      <div class="card" id="boroka">
         <div class="card-inner">
           <div class="card-front">
             <img src="./img/boroka.jpg" alt="Boróka" />
@@ -200,7 +200,7 @@
         </div>
       </div>
       <!--Borsmenta-->
-      <div class="card">
+      <div class="card" id="borsmenta">
         <div class="card-inner">
           <div class="card-front">
             <img src="./img/borsosmenta.jpg" alt="Borsmenta" />
@@ -219,7 +219,7 @@
         </div>
       </div>
       <!--Cickafark-->
-      <div class="card">
+      <div class="card" id="cickafark">
         <div class="card-inner">
           <div class="card-front">
             <img src="./img/cickafark.jpg" alt="Cickafark" />
@@ -237,7 +237,7 @@
         </div>
       </div>
       <!--Citromfű-->
-      <div class="card">
+      <div class="card" id="citromfu">
         <div class="card-inner">
           <div class="card-front">
             <img src="./img/citromfu.jpg" alt="Citromfű" />
@@ -252,7 +252,7 @@
         </div>
       </div>
       <!--Csalán-->
-      <div class="card">
+      <div class="card" id="csalan">
         <div class="card-inner">
           <div class="card-front">
             <img src="./img/csalan.jpg" alt="Csalán" />
@@ -270,7 +270,7 @@
         </div>
       </div>
       <!--Csattanó maszlag-->
-      <div class="card">
+      <div class="card" id="cattanomaszlag">
         <div class="card-inner">
           <div class="card-front">
             <img src="./img/csattanomaszlag.jpg" alt="Csattanó maszlag" />
@@ -288,18 +288,59 @@
           </div>
         </div>
       </div>
+      <!--Édeskömény-->
+      <div class="card" id="edeskomeny">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./img/edeskomeny.jpg" alt="Édeskömény" />
+            <div class="card-title">Édeskömény</div>
+          </div>
+          <div class="card-back">
+            <h3 class="card-title">Édeskömény</h3>
+            <h4 class="card-title-latin">Foeniculum vulgare MILL.</h4>
+            <p>
+              Drogot a termése szolgáltatja.
+            </p>
+            <p>
+              Szélhajtó, emésztés- és étvágyjavító, enyhe görcsoldó és epehajtó hatású. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Hársvirág-->
+      <div class="card" id="harsvirag">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./img/hars.jpg" alt="Hársvirág" />
+            <div class="card-title">Hárs virág</div>
+          </div>
+          <div class="card-back">
+            <h3 class="card-title">Hársvirág</h3>
+            <h4 class="card-title-latin">Tilia ssp.</h4>
+            <p>
+              Drogját a kislevelű hárs, a nagylevelű hárs vagy a közönséges hárs
+              egész, szárított virágzata adja.
+            </p>
+            <p>
+              Felső légúti hurutok, lázas meghűlés, köhögés, gyulladások esetén
+              izzasztó, köptető, nyálkaoldó hatása miatt alkalmazzák. Enyhe
+              vizelethajtó és nyugtató hatással is rendelkezik.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--Footer-->
     <footer>
       <ul class="secondary-nav-footer">
-        <li><a href="fitotherapy.html">Fitoterápia</a></li>
-        <li><a href="./about.html">Rólunk</a></li>
-        <li><a href="./contact.html">Kapcsolat</a></li>
+        <li><a href="fitoterapia.html">Fitoterápia</a></li>
+        <li><a href="./rolunk.html">Rólunk</a></li>
+        <li><a href="./kapcsolat.html">Kapcsolat</a></li>
       </ul>
 
       <p class="copyright">&copy; 2026 HerbaLex - Minden jog fenntartva.</p>
     </footer>
   </body>
-  <script src="js/toggle-menu.js"></script>
+  <script src="js/index.js"></script>
 </html>
