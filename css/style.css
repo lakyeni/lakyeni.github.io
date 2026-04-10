@@ -310,6 +310,52 @@ main.blog {
   background-color: rgba(128, 0, 128, 0.637);
 }
 
+.newsletter-atfedes {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+  }
+
+  /*aktiv allapotban */
+  .newsletter-atfedes.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .atfedes-kontener {
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 400px;
+    transform: scale(0.8);
+    transition: 0.3s ease;
+  }
+
+  .newsletter-atfedes.active .atfedes-kontener {
+    transform: scale(1);
+  }
+
+  .atfedes-kontener button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
 /*Cikk cimek */
 .welcome {
   margin: 25px;
@@ -610,51 +656,7 @@ html {
     justify-items: center;
   }
 
-  .newsletter-atfedes {
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.06);
-    backdrop-filter: blur(5px);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s ease;
-  }
-
-  /*aktiv allapotban */
-  .newsletter-atfedes.active {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .atfedes-kontener {
-    background-color: white;
-    padding: 40px;
-    border-radius: 16px;
-    text-align: center;
-    max-width: 400px;
-    transform: scale(0.8);
-    transition: 0.3s ease;
-  }
-
-  .newsletter-atfedes.active .atfedes-kontener {
-    transform: scale(1);
-  }
-
-  .atfedes-kontener button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #4caf50;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-  }
+  
 }
 
 /*tablet méret */
