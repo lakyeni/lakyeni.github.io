@@ -367,17 +367,18 @@ h2.title-catalog {
 /* katalógus kártyák */
 section.catalog {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   justify-items: center;
+  padding: 20px;
 }
 
 .card {
-  width: 90%;
+  width: 100%;
   max-width: 300px;
   height: 300px;
-  perspective: 1000px;
-  margin: 20px;
+  margin: 0 auto;
+
 }
 
 .card-inner {
@@ -609,7 +610,7 @@ html {
 /* reszponzív design */
 
 /* tablet */
-@media (min-width: 825px) {
+@media (min-width: 768px) {
   .hero-title {
     font-size: 4rem;
   }
@@ -623,20 +624,22 @@ html {
     padding: 12px 40px;
   }
 
-  section.catalog {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 /*tablet méret */
-@media (min-width: 1144px) {
+@media (min-width: 1024px) {
   header {
     height: 40vh;
   }
 
-  section.catalog {
-    grid-template-columns: repeat(3, 1fr);
+  .menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background: none;
   }
+
 
   .hero-title {
     font-size: 6rem;
@@ -652,7 +655,7 @@ html {
 }
 
 /* laptop néret */
-@media (min-width: 1264px) {
+@media (min-width: 1280px) {
   nav.secondary-nav ul {
     display: flex;
     justify-content: flex-end;
@@ -666,22 +669,6 @@ html {
     display: none;
   }
 
-  .menu {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    width: auto;
-    background: none;
-  }
-
-  .card {
-    width: 380px;
-    height: 300px;
-  }
-
-  section.catalog {
-    grid-template-columns: repeat(3, 1fr);
-  }
 
   .newsletter {
     width: 50%;
@@ -695,7 +682,6 @@ html {
 
   .post {
     flex: 1;
-    max-width: 35%;
   }
 
   .welcome h2 {
@@ -705,7 +691,7 @@ html {
 }
 
 /* desktop néret */
-@media (min-width: 1766px) {
+@media (min-width: 1536px) {
   .hero-title {
     font-size: 7rem;
   }
@@ -721,14 +707,7 @@ html {
     height: 50vh;
   }
 
-  section.catalog {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
 
-  .post {
-    flex: 1;
-    max-width: 35%;
-  }
 }
 
 /* animáció oldalcímre */
