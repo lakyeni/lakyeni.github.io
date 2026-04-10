@@ -354,7 +354,7 @@ section.catalog {
 .card {
   width: 90%;
   max-width: 300px;
-  height: 250px;
+  height: 300px;
   perspective: 1000px;
   margin: 20px;
 }
@@ -547,6 +547,34 @@ footer {
   text-decoration: underline;
 }
 
+/*vissza a tetejére */ 
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: rgba(96, 153, 102, 0.9);
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+  text-decoration: none;
+  display: none; /* alapból rejtve */
+  z-index: 1000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: purple;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Copyright */
 .copyright {
   font-size: 0.8rem;
@@ -561,9 +589,9 @@ footer {
     display: none;
   }
 
-  .card {
+ /* .card {
     height: 250px;
-  }
+  }*/
 
   .hero-title {
     font-size: 4rem;
@@ -577,7 +605,12 @@ footer {
   .newsletter button {
     padding: 12px 40px;
   }
-}
+
+  section.catalog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
 
 .newsletter-atfedes {
   position: fixed;
@@ -625,7 +658,7 @@ footer {
   border-radius: 8px;
   cursor: pointer;
 }
-
+}
 
 /*tablet méret */
 @media (min-width: 1144px) {
@@ -651,10 +684,10 @@ footer {
     display: block;
   }
 
-  .card {
+  /*.card {
     width: 350px;
     height: 300px;
-  }
+  }*/
 
   .search-input {
     width: 350px;
@@ -741,10 +774,10 @@ footer {
     width: 550px;
   }
 
-  .card {
+  /*.card {
     width: 300px;
     height: 300px;
-  }
+  }*/
   .card-purple {
     width: 40%;
   }
