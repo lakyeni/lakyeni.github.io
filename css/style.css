@@ -9,8 +9,6 @@ body {
   background-color: rgb(237, 241, 214);
   font-size: 16px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 /* fejléc kép*/
@@ -41,24 +39,6 @@ h1 {
 
 /* Mellék navigáció */
 
-.secondary-nav-footer a {
-  display: flex;
-  text-decoration: none;
-  color: white;
-  background-color: #6099665e;
-  padding: 8px 15px;
-  border-radius: 20px;
-}
-
-.secondary-nav-footer a:hover {
-  background-color: purple;
-}
-
-.copyright {
-  font-size: 0.9rem;
-  opacity: 0.9;
-}
-
 nav.secondary-nav ul {
   display: none; /*mobilon nincs */
 }
@@ -72,14 +52,15 @@ nav.secondary-nav li {
 nav.secondary-nav a {
   text-decoration: none;
   color: rgb(96, 153, 102);
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: inline-block;
+  transition: 0.2s;
 }
 
-.secondary-nav a:hover {
+nav.secondary-nav a:hover {
   background-color: purple;
   color: white;
-  border: none;
-  border-radius: 10px;
-  padding: 5px 10px;
 }
 
 /* Fő navigációs sáv */
@@ -105,11 +86,10 @@ nav.main-nav {
   list-style: none;
   position: absolute;
   top: 60px;
-  right: 0;
   background-color: rgba(96, 153, 102, 0.95);
-  right: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+    width: 100%;
   text-align: center;
   padding: 10px 0;
   font-size: 1.5rem;
@@ -153,16 +133,14 @@ nav.main-nav {
 }
 
 /* fejléc cim */
+
 .hero-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  inset: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
-  /* távolság a cím és kereső között */
 }
 
 /* keresés */
@@ -581,7 +559,6 @@ footer {
   padding: 25px 15px;
   text-align: center;
 }
-
 /* Menü */
 .secondary-nav-footer {
   display: flex;
@@ -621,8 +598,6 @@ footer {
   display: none; /* alapból rejtve */
   z-index: 1000;
   cursor: pointer;
-  transition: 0.3s;
-
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -646,9 +621,6 @@ html {
 
 /* tablet */
 @media (min-width: 825px) {
-  nav.secondary-nav ul {
-    display: none;
-  }
 
   .hero-title {
     font-size: 4rem;
@@ -672,9 +644,6 @@ html {
 
 /*tablet méret */
 @media (min-width: 1144px) {
-  nav.secondary-nav ul {
-    display: none;
-  }
 
   header {
     height: 40vh;
@@ -704,8 +673,9 @@ html {
 
 /* laptop néret */
 @media (min-width: 1264px) {
-  nav.secondary-nav ul {
-    display: none;
+nav.secondary-nav ul {
+    display: flex;
+    justify-content: flex-end;
   }
 
   .hamburger {
@@ -769,10 +739,7 @@ html {
 
 /* desktop néret */
 @media (min-width: 1766px) {
-  nav.secondary-nav ul {
-    display: flex;
-    justify-content: flex-end;
-  }
+  
 
   .hero-title {
     font-size: 7rem;
