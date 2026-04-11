@@ -84,4 +84,18 @@ if (atfedes) {
     }
   });
 
-  
+  // vissza a tetejére gomb 
+
+ const logo = document.getElementById("logo");
+
+window.addEventListener("scroll", () => {
+  if (window.innerWidth < 1024) {
+    if (window.scrollY > 200) {
+      logo.classList.add("active");
+    } else {
+      logo.classList.remove("active");
+    }
+  } else {
+    logo.classList.remove("active");
+  }
+});

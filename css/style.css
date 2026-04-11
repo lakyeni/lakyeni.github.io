@@ -33,6 +33,10 @@ h1 {
   margin-left: 15px;
 }
 
+.logo.active {
+  display: none;
+}
+
 .logo:hover {
   opacity: 0.8;
 }
@@ -74,6 +78,7 @@ nav.main-nav {
   position: sticky;
   top: 0;
   width: 100%;
+  height: 80px;
   padding: 5px 5px;
   z-index: 1000;
 }
@@ -102,7 +107,6 @@ nav.main-nav {
 
 .menu li {
   margin: 10px 0;
-  /*padding: 5px;*/
 }
 
 .menu a {
