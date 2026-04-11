@@ -640,6 +640,9 @@ html {
     background: none;
   }
 
+   .hamburger {
+    display: none;
+  }
 
   .hero-title {
     font-size: 6rem;
@@ -665,9 +668,7 @@ html {
     display: none;
   }
 
-  .hamburger {
-    display: none;
-  }
+ 
 
 
   .newsletter {
