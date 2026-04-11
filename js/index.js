@@ -2,6 +2,21 @@
 function toggleMenu() {
     document.querySelector(".menu").classList.toggle("active");
 }
+
+const menu = document.querySelector(".menu");
+const hamburger = document.querySelector(".hamburger");
+
+document.addEventListener("click", function (e) {
+  const isClickInsideMenu = menu.contains(e.target);
+  const isClickOnHamburger = hamburger.contains(e.target);
+
+  if (!isClickInsideMenu && !isClickOnHamburger) {
+    menu.classList.remove("active");
+  }
+});
+
+
+
 // a kereső nem müködik üzenet
 const searchInput = document.getElementById("searchInput");
 
@@ -23,6 +38,7 @@ const searchInput = document.getElementById("searchInput");
     }
   });
 
+  // kereső megjelenítése görgetéskor kis képernyőn
   const searchNavclose = document.getElementById("searchNav");
 
 window.addEventListener("scroll", () => {
