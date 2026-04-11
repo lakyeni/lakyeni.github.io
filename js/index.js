@@ -13,6 +13,30 @@ const searchInput = document.getElementById("searchInput");
     }
   });
 
+  const searchNav = document.getElementById("searchNav");
+
+  searchNav.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault(); 
+      alert("Sajnáljuk, a kereső jelenleg nem működik.");
+      searchNav.value = ""; 
+    }
+  });
+
+  const searchNavclose = document.getElementById("searchNav");
+
+window.addEventListener("scroll", () => {
+  if (window.innerWidth < 1024) {
+    if (window.scrollY > 200) {
+      searchNav.classList.add("active");
+    } else {
+      searchNav.classList.remove("active");
+    }
+  } else {
+    searchNav.classList.remove("active");
+  }
+});
+
 // hirlevél felirakozás üzenet
 const form = document.getElementById("newsletterForm");
 const atfedes = document.querySelector(".newsletter-atfedes");
@@ -59,3 +83,5 @@ if (atfedes) {
       btn.style.display = "none";
     }
   });
+
+  
